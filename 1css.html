@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/asset/css/1.css">
+</head>
+<style>
+    /* 1. Select សកល. ជ្រើសរើសគ្រប់ធាតុ */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*2. Select ប្រភេទ​(Element). ជ្រើសរើសគ្រប់ធាតុ​ p. h1 */
+    p {
+        color: pink;
+        font-size: 16px;
+    }
+    h1 {
+        color: blueviolet;
+    }
+    /*3.Selecter ថ្នាក់ (Class). ជ្រើសរើសយកធាតុដែលមាន​​ class="title" */
+    .title {
+        color: yellow;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /*4. Selecter លេខសម្គាល់​(ID). ជ្រើសរើសយកធាតុដែលមាន​ id="header" */
+    #Header {
+        background-color: yellowgreen;
+        padding: 10px;
+        text-align: center;
+    }
+    /*5. Selecter ដាក់ជាក្រុម​ (Group) */
+    h1, h2, p {
+        margin-bottom: 10px;
+    }
+    /*6. Selecter កូនចៅ (Descendant) ជ្រើស <p> ទាំងអស់នៅក្នុង Div */
+    div p {
+        color: aqua;
+        font-style: italic;
+    }
+    /*7. Selecter កូនផ្ទាល់(Child)​ជ្រើស <p> ដែលជាកូនផ្ទាល់របស់​ Div */
+    div > p {
+        color: chartreuse;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+    <!-- ID Selecter -->
+    <div id="Header">Header</div>
+
+    <!-- Element and group Selecter -->
+     <h1>CSS Selecter</h1>
+     <h2>Example</h2>
+
+     <!-- Element Selecter -->
+      <p>Paragraph Outside</p>
+
+      <!-- Class Selecter -->
+       <p class="title">Paragraph ដែលមាន Class title</p>
+
+    <!-- Descendant & Child selecter -->
+     <div>
+        <p>Paragraph កូនផ្ទាល់់របស់ Div</p>
+        
+        <selection>
+            <p>Paragraph កូនចៅរបស់ Div</p>
+        </selection>
+     </div>
+    
+</body>
+</html>
